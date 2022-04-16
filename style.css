@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    height: 300px;
+    margin: 0 40px;
+}
+
+.current, .hour24, .hour48{
+    flex: 1;
+    border: 1px solid black;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+
+    <h1>Weather Forecast by Zipcode</h1>
+
+    <label for="text">Enter Zip Code or City</label>
+    <input type="text" class="zipCode">
+    <button>Search Forecast</button>
+
+    <h2 class="city"></h2><h2 class="state"></h2><h2 class="country"></h2>
+
+    <section class="container">
+        <section class="current">
+            <h3 class="currentDate"></h3>
+            <h3 class="currentWeather"></h3>
+            <h3 class="currentTemp"></h3>
+            <img src="" alt="" class="currentImg">
+        </section>
+        <section class="hour24">
+            <h3 class="tomorrow"></h3>
+            <h3 class="weather24"></h3>
+            <h3 class="temp24"></h3>
+            <img src="" alt="" class="img24">
+        </section>
+        <section class="hour48">
+            <h3 class="twoDays"></h3>
+            <h3 class="weather48"></h3>
+            <h3 class="temp48"></h3>
+            <img src="" alt="" class="img48">
+        </section>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
