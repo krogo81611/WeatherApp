@@ -1,5 +1,5 @@
 //Set up event listener for intial API Fetch
-
+const container = document.querySelector('.hidden')
 document.querySelector('button').addEventListener('click',getFetch) 
 
 function getFetch() {
@@ -40,18 +40,20 @@ class WeatherForecast {
     createForecast() {
         document.querySelector('.currentDate').innerText = this.today;
         document.querySelector('.currentWeather').innerText = this.todayCondition
-        document.querySelector('.currentImg').src = this.todayImg
+        document.querySelector('.currentImg').src = `https:${this.todayImg}`
         document.querySelector('.currentTemp').innerHTML = this.todayTemp
 
         document.querySelector('.tomorrow').innerText = this.tomorrow;
         document.querySelector('.weather24').innerText = this.tomorrowCondition;
-        document.querySelector('.img24').src =this.tomorrowImg;
+        document.querySelector('.img24').src =`https:${this.tomorrowImg}`;
         document.querySelector('.temp24').innerHTML = this.tomorrowTemp;
 
         document.querySelector('.twoDays').innerText = this.twoDays;
         document.querySelector('.weather48').innerText = this.twoDayCondition;
-        document.querySelector('.img48').src = this.twoDayImg;
+        document.querySelector('.img48').src = `https:${this.twoDayImg}`;
         document.querySelector('.temp48').innerHTML = this.twoDayTemp;
+
+        container.classList.remove('hidden')
     }
 
     showLocation() {
