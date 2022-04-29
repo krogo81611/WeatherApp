@@ -19,9 +19,7 @@ body {
     background-color: rgb(68, 68, 145);
     text-align: center;
 }
-.container {
-    background-color: blue;
-}
+
 
 .hidden {
     display: none;
